@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project(grutest LANGUAGES C)
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+aux_source_directory(. SRC_CUR)
+add_executable(sort ${SRC_CUR})
+target_link_libraries(sort m)
